@@ -27,6 +27,7 @@
     <br>
     <p id="Games" style="font-size: 16px; font-weight: bold;">Example of the games I played</p> 
         <ul>
+            <img scr= "https://store-images.s-microsoft.com/image/apps.30472.13966330883349940.9a0bbc3f-3231-4a17-ab16-55eb671f1755.d9aecc85-6637-4e56-a359-009944a02940?q=90&w=177&h=265" alt=" love this image from call of duty">
             <li>Call of Duty Black Ops</li>
             <li>Wii Super Paper Mario</li>
             <li>Wii Sport</li>
