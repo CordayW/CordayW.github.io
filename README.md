@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="author" content="Corday Wainwright">
     <meta name="description" content=" A future site where you get to know me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
 </head>
+
 <body>
-    <header style="background-color: antiquewhite;" style="text-decoration-color: black;">
+    <header style="background-color: rgb(40, 168, 83);" style="text-decoration-color: black;">
         
         <h1></h1>
         <p></p>
@@ -27,7 +29,6 @@
     <br>
     <p id="Games" style="font-size: 16px; font-weight: bold;">Example of the games I played</p> 
         <ul>
-            <img scr= "https://store-images.s-microsoft.com/image/apps.30472.13966330883349940.9a0bbc3f-3231-4a17-ab16-55eb671f1755.d9aecc85-6637-4e56-a359-009944a02940?q=90&w=177&h=265" alt="">
             <li>Call of Duty Black Ops</li>
             <li>Wii Super Paper Mario</li>
             <li>Wii Sport</li>
@@ -46,6 +47,7 @@
 
     </h2>
     <p style="font-size: 18px;"> I work on many solo and group projects for websites and video games. Some of the video games are word-based, while others you can move around and look at the world you are in; very beginner-level stuff.</p>
+    <img src="images/diffcodeimage.jpg" alt="lines of codes">
 <footer>
     Contact me:
     <a href="mailto:Cordaywainwright12@gmail.com">Me@host.com</a>
