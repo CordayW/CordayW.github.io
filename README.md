@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header style="background-color: rgb(40, 168, 83);" style="text-decoration-color: black;">
-        
+    <header style="background-color: rgb(40, 168, 83);" style="text-decoration-color: black;" style="height:250px; background-image:url(images/pexels.jpg)">
+     
         <h1></h1>
         <p></p>
         <p></p>
@@ -50,7 +50,7 @@
     <img src="images/diffcodeimage.jpg" alt="lines of codes">
 <footer>
     Contact me:
-    <a href="mailto:Cordaywainwright12@gmail.com">Me@host.com</a>
+    <a href="mailto:Corday.wainwright12@gmail.com">Me@host.com</a>
     <a href="tel:9415555555">1(941)555-5555</a>
 </footer>
 </body>
