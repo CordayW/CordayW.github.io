@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header style="height:250px; background-image:url(images/pexels.jpg)">
+    <header style="background-color: rgb(40, 168, 83);" style="text-decoration-color: black;" style="height:250px; background-image:url(images/pexels.jpg)">
      
         <h1></h1>
         <p></p>
