@@ -6,6 +6,79 @@
     <meta name="author" content="Corday Wainwright">
     <meta name="description" content=" A future site where you get to know me">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <style> 
+    body {
+        width: 1000px;
+        margin: auto;
+        background-color: #dff5e5;
+        background-image: url(images/bbg.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        height: 250px;
+        background-color: rgb(40, 168, 83);
+        background-image: url(images/pexels.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    nav {
+        text-align: center;
+        padding: 15px;
+        background-color: #145a32;
+        font-size: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    nav a:hover {
+        background-color: #28a853;
+        color: black;
+    }
+    main {
+        background-color: white;
+        color: #222;
+        padding: 25px;
+    }
+    h1 {
+        color: #145a32;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    h2 {
+        color: #1b5e20;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    ul {
+        line-height: 1.8;
+    }
+    footer {
+        color: white;
+        background-color: #145a32;
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+    }
+    footer a {
+        color: white;
+        margin: 0 10px;
+    }
+</style>
 </head>
 
 <body style="background-image:url(images/bbg.jpg)">
