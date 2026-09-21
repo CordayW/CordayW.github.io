@@ -1,130 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>About me</title>
     <meta charset="utf-8">
+    <title>About Corday Wainwright</title>
     <meta name="author" content="Corday Wainwright">
-    <meta name="description" content=" A future site where you get to know me">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <style> 
-    body {
-        width: 1000px;
-        margin: auto;
-        background-color: #dff5e5;
-        background-image: url(images/bbg.jpg);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    header {
-        height: 250px;
-        background-color: rgb(40, 168, 83);
-        background-image: url(images/pexels.jpg);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    nav {
-        text-align: center;
-        padding: 15px;
-        background-color: #145a32;
-        font-size: 20px;
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-    }
-    nav a:hover {
-        background-color: #28a853;
-        color: black;
-    }
-    main {
-        background-color: white;
-        color: #222;
-        padding: 25px;
-    }
-    h1 {
-        color: #145a32;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
-    h2 {
-        color: #1b5e20;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-    }
-    ul {
-        line-height: 1.8;
-    }
-    footer {
-        color: white;
-        background-color: #145a32;
-        font-size: 14px;
-        padding: 20px;
-        text-align: center;
-    }
-    footer a {
-        color: white;
-        margin: 0 10px;
-    }
-</style>
+    <meta name="description" content="Learn about Corday Wainwright, his interests, video games, and web development projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="Corday.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-image:url(images/bbg.jpg)">
-    <header style="background-color: rgb(40, 168, 83);" style="text-decoration-color: black;" style="height:250px; background-image:url(images/pexels.jpg)">
-     
+<body>
+
+    <header>
         <h1></h1>
         <p></p>
         <p></p>
-        <p></p> 
-
+        <p></p>
     </header>
-    <nav id="Top">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a><br>
-        <a href="https://pokerogue.net">Fun game</a>
-        <a href="#introduction">Topic 1</a>
-    </nav>
-    <h1 style="text-align: center; " id="hi">Meet Corday</h1>
-    <p style="font-size: 16px;" id="introduction">Hi, I'm <b>Corday Wainwright</b> and this is a website about me. I was born on June 5, 2008, to a big family of 8. I was born the "<i>baby of the family</i>" and I grew up on Wii games and late 1990s-2000s cartoons. I was born and raised in Florida my whole life, and I love it here. Florida has amazing places to visit like <b>Busch Gardens</b> and <b>Sea World</b>. I'm also a believer of <b><i>Jesus Christ</i></b> and try my best every day to be a better version of myself. </p>
-    <p style="font-size: 16px;">I always dream of coding a game that will inspire millions of people around the world. Just thinking about millions of people enjoying something I created gives me a wonderful feeling. This dream came from me realizing how much I love playing video games.</p>
-    <br>
-    <p id="Games" style="font-size: 16px; font-weight: bold;">Example of the games I played</p> 
+
+    <nav>
         <ul>
-            <li>Call of Duty Black Ops</li>
-            <li>Wii Super Paper Mario</li>
-            <li>Wii Sport</li>
-            <li>Dark Soul 2</li>
+            <li>
+                <a href="index.htm" class="selected">Home</a>
+            </li>
+
+            <li>
+                <a href="resume.htm">Resume</a>
+            </li>
+
+            <li>
+                <a href="portfolio.htm">Portfolio</a>
+            </li>
+
+            <li>
+                <a href="newsletter.htm">Newsletter</a>
+            </li>
+
+            <li>
+                <a href="contact.htm">Contact</a>
+            </li>
+
+            <li>
+                <a href="https://pokerogue.net" target="_blank">Fun Game</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1 id="hi">Meet Corday</h1>
+
+        <p id="introduction">
+            Hi, I'm <b>Corday Wainwright</b> and this is a website about me.
+            I was born on June 5, 2008, to a big family of 8. I was born the
+            "<i>baby of the family</i>" and I grew up on Wii games and late
+            1990s-2000s cartoons. I was born and raised in Florida my whole
+            life, and I love it here. Florida has amazing places to visit like
+            <b>Busch Gardens</b> and <b>SeaWorld</b>. I'm also a believer of
+            <b><i>Jesus Christ</i></b> and try my best every day to be a better
+            version of myself.
+        </p>
+
+        <p>
+            I always dream of coding a game that will inspire millions of
+            people around the world. Just thinking about millions of people
+            enjoying something I created gives me a wonderful feeling. This
+            dream came from me realizing how much I love playing video games.
+        </p>
+
+        <h2>Examples of Games I Played</h2>
+
+        <ul>
+            <li>Call of Duty: Black Ops</li>
+            <li>Super Paper Mario</li>
+            <li>Wii Sports</li>
+            <li>Dark Souls II</li>
             <li>Minecraft</li>
             <li>Halo</li>
             <li>Batman: Arkham City</li>
-            <li>FARCRY</li>
+            <li>Far Cry</li>
             <li>Sniper Elite 3</li>
-            <li>Mortal Kombat</li>            
+            <li>Mortal Kombat</li>
         </ul>
-    <br>    
-    <p style="font-size: 16px;">These games and more shaped me into the man I am today. I love how the graphics change over time and how different groups of people can form communities over these games. I want to make a game that will have the same effect and make people excited to play.</p>
-    <br>
-    <h2 style="color:blue; text-align: center;">What I been up to
 
-    </h2>
-    <p style="font-size: 18px;"> I work on many solo and group projects for websites and video games. Some of the video games are word-based, while others you can move around and look at the world you are in; very beginner-level stuff.</p>
-    <img src="images/diffcodeimage.jpg" alt="lines of codes">
-<footer>
-    Contact me:
-    <a href="mailto:Corday.wainwright12@gmail.com">Me@host.com</a>
-    <a href="tel:9415555555">1(941)555-5555</a>
-</footer>
+        <p>
+            These games and more shaped me into the man I am today. I love how
+            the graphics change over time and how different groups of people
+            can form communities over these games. I want to make a game that
+            will have the same effect and make people excited to play.
+        </p>
+
+        <h2>What I've Been Up To</h2>
+
+        <p>
+            I work on many solo and group projects for websites and video
+            games. Some of the video games are word-based, while others allow
+            you to move around and explore the world you are in. They are
+            beginner-level projects, but they are helping me learn and improve.
+        </p>
+
+        <img src="images/diffcodeimage.jpg" alt="Lines of computer code">
+
+    </main>
+
+    <footer>
+        Contact me:
+        <a href="mailto:Corday.wainwright12@gmail.com">
+            Corday.wainwright12@gmail.com
+        </a>
+
+        <a href="tel:9415555555">
+            1 (941) 555-5555
+        </a>
+    </footer>
+
 </body>
 </html>
