@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>About Corday Wainwright</title>
     <meta name="author" content="Corday Wainwright">
-    <meta name="description" content="Learn about Corday Wainwright, his interests, video games, and web development projects.">
+    <meta name="description" content=" Learn about Corday Wainwright, his interests, video games, and web development projects.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="Untitled-1.css" rel="stylesheet" type="text/css">
@@ -23,17 +23,12 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="selected">Home</a>
+                <a href="README.md" class="selected">Home</a>
             </li>
 
             <li>
-                <a href="resume.htm">Resume</a>
+                <a href="resume.html">Resume</a>
             </li>
-
-            <li>
-                <a href="portfolio.htm">Portfolio</a>
-            </li>
-
 
             <li>
                 <a href="https://pokerogue.net" target="_blank">Fun Game</a>
