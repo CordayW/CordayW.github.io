@@ -34,13 +34,6 @@
                 <a href="portfolio.htm">Portfolio</a>
             </li>
 
-            <li>
-                <a href="newsletter.htm">Newsletter</a>
-            </li>
-
-            <li>
-                <a href="contact.htm">Contact</a>
-            </li>
 
             <li>
                 <a href="https://pokerogue.net" target="_blank">Fun Game</a>
