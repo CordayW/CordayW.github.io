@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <title>About Corday Wainwright</title>
     <meta name="author" content="Corday Wainwright">
-    <meta name="description" content=" Learn about Corday Wainwright, his interests, video games, and web development projects.">
+    <meta name="description" content="Learn about Corday Wainwright, his interests, video games, and web development projects.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="Untitled-1.css" rel="stylesheet" type="text/css">
+    <link href="Corday.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -23,11 +23,23 @@
     <nav>
         <ul>
             <li>
-                <a href="README.md" class="selected">Home</a>
+                <a href="index.html" class="selected">Home</a>
             </li>
 
             <li>
                 <a href="resume.html">Resume</a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+
+            <li>
+                <a href="newsletter.html">Newsletter</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
             </li>
 
             <li>
