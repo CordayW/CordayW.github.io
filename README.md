@@ -14,10 +14,10 @@
 <body>
 
     <header>
-        <h1></h1>
-        <p></p>
-        <p></p>
-        <p></p>
+        <h1>Corday Wainwright</h1>
+        <p>Aspiring Game Developer</p>
+        <p>Web Designer</p>
+        <p>Programmer</p>
     </header>
 
     <nav>
@@ -53,9 +53,9 @@
         <h1 id="hi">Meet Corday</h1>
 
         <p id="introduction">
-            Hi, I'm <b>Corday Wainwright</b> and this is a website about me.
+            Hi, I'm <strong>Corday Wainwright</strong> and this is a website about me.
             I was born on June 5, 2008, to a big family of 8. I was born the
-            "<i>baby of the family</i>" and I grew up on Wii games and late
+            "<em>baby of the family</em>" and I grew up on Wii games and late
             1990s-2000s cartoons. I was born and raised in Florida my whole
             life, and I love it here. Florida has amazing places to visit like
             <b>Busch Gardens</b> and <b>SeaWorld</b>. I'm also a believer of
