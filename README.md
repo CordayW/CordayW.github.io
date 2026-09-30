@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>About Corday Wainwright</title>
     <meta name="author" content="Corday Wainwright">
-    <meta name="description" content="Learn about Corday Wainwright, his interests, video games, and web development projects.">
+    <meta name="description" content=" Learn about Corday Wainwright, his interests, video games, and web development projects.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="Corday.css" rel="stylesheet" type="text/css">
