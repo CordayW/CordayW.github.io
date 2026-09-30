@@ -14,10 +14,10 @@
 <body>
 
     <header>
-        <h1>Corday Wainwright</h1>
-        <p>Aspiring Game Developer</p>
-        <p>Web Designer</p>
-        <p>Programmer</p>
+        <h1></h1>
+        <p></p>
+        <p> </p>
+        <p></p>
     </header>
 
     <nav>
