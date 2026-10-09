@@ -18,41 +18,82 @@ header {
     background-position: center;
     color: white;
     padding: 20px;
-}
 
 nav {
-    text-align: center;
-    padding: 15px;
-    background-color: #145a32;
-    font-size: 20px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #234b35;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-nav li {
-    display: inline;
-    padding: 0 10px;
+nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: white;
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #ffffff;
+    font-size: 16px;
     text-decoration: none;
-    padding: 10px 15px;
+    text-align: center;
+    transition: background-color 0.2s ease;
 }
 
-nav a:hover {
-    background-color: #28a853;
-    color: black;
+nav ul li a:hover,
+nav ul li a:focus-visible {
+    background-color: #3d7653;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-nav a.selected {
-    background-color: #28a853;
-    color: black;
+/* Highlight the current page */
+nav ul li a.selected,
+nav ul li a[aria-current="page"] {
+    background-color: #dcebdc;
+    color: #234b35;
+    font-weight: bold;
 }
+
+/* Keyboard accessibility */
+nav ul li a:focus-visible {
+    outline: 3px solid #f4d35e;
+    outline-offset: -3px;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 12px 16px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
 
 main {
     background-color: white;
