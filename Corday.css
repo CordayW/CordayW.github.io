@@ -1,171 +1,267 @@
-*{
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 body {
-max-width: 1000px;
-margin: auto;
-background-color: #dff5e5;
-background-image: url(images/bbg.jpg);
-font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #dff5e5;
+    background-image: url(images/bbg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-min-height: 250px;
-background-color: rgb(40, 168, 83);
-background-image: url(images/pexels.jpg);
-background-size: cover;
-background-position: center;
-color: white;
-padding: 20px;
-}
-
-header h1 {
-color: white;
-text-align: left;
-margin-top: 20px;
-}
-
-header p {
-font-size: 18px;
+    height: 250px;
+    background-color: rgb(40, 168, 83);
+    background-image: url(images/pexels.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
 }
 
 nav {
-text-align: center;
-padding: 15px;
-background-color: #145a32;
-font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #145a32;
+    font-size: 20px;
 }
 
 nav ul {
-margin: 0;
-padding: 0;
-list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav li {
-display: inline;
-padding: 0 10px;
+    display: inline;
+    padding: 0 10px;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 nav a:hover {
-background-color: #28a853;
-color: black;
+    background-color: #28a853;
+    color: black;
 }
 
 nav a.selected {
-background-color: #28a853;
-color: black;
+    background-color: #28a853;
+    color: black;
 }
 
 main {
-background-color: white;
-color: #222;
-padding: 25px;
-overflow: auto;
+    background-color: white;
+    color: #222;
+    padding: 25px;
+    overflow: auto;
 }
 
 h1 {
-color: #145a32;
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
+    color: #145a32;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 h2 {
-color: #1b5e20;
-font-family: Arial, Helvetica, sans-serif;
+    color: #1b5e20;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-font-size: 16px;
-line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 img {
-max-width: 100%;
-height: auto;
-display: block;
-margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 ul {
-line-height: 1.8;
+    line-height: 1.8;
 }
 
 abbr {
-color: #145a32;
-font-weight: bold;
-text-decoration: underline dotted;
+    color: #145a32;
+    font-weight: bold;
+    text-decoration: underline dotted;
 }
 
 address {
-font-style: normal;
-line-height: 1.8;
-text-align: center;
-margin-bottom: 25px;
+    font-style: normal;
+    line-height: 1.8;
+    text-align: center;
 }
 
 address a {
-color: #145a32;
+    color: #145a32;
 }
 
 footer {
-color: white;
-background-color: #145a32;
-font-size: 14px;
-padding: 20px;
-text-align: center;
+    color: white;
+    background-color: #145a32;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
 }
 
 footer a {
-color: white;
-margin: 0 10px;
+    color: white;
+    margin: 0 10px;
 }
 
 /* Resume two-column layout */
 
 .resume-main {
-border: 2px solid #145a32;
-padding: 0;
+    border: 2px solid #145a32;
 }
 
 .resume-aside {
-width: 25%;
-float: left;
-padding: 14px;
-text-align: right;
-background-color: #e8f5e9;
-min-height: 700px;
+    width: 25%;
+    float: left;
+    padding: 14px;
+    text-align: right;
+    background-color: #e8f5e9;
+    min-height: 500px;
 }
 
 .resume-section {
-width: 75%;
-float: left;
-padding: 14px;
-background-color: white;
+    width: 75%;
+    float: left;
+    padding: 14px;
 }
 
 .resume-aside h2 {
-color: #145a32;
-font-size: 20px;
-margin-bottom: 100px;
+    color: #145a32;
+    font-size: 20px;
 }
 
 .resume-section h2 {
-border-bottom: 2px solid #28a853;
-padding-bottom: 5px;
-}
-
-.resume-section h1 {
-margin-top: 0;
+    border-bottom: 2px solid #28a853;
+    padding-bottom: 5px;
 }
 
 .clearfix {
-clear: both;
+    clear: both;
+}
+
+/* Portfolio layout and responsive project cards */
+
+#figureContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin: 25px auto;
+    align-items: stretch;
+}
+
+#figureContainer .project-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #cbd5ce;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+    overflow-wrap: anywhere;
+}
+
+#figureContainer .project-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    margin: 0 0 15px;
+    border-radius: 6px;
+}
+
+#figureContainer .project-card figcaption {
+    flex: 1;
+    line-height: 1.6;
+}
+
+#figureContainer .project-card h3 {
+    color: #145a32;
+    margin-top: 0;
+}
+
+#figureContainer .project-card p {
+    font-size: 15px;
+}
+
+#figureContainer .project-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #145a32;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#figureContainer .project-card a:hover {
+    color: #218838;
+}
+
+.portfolio-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Tablet: display two complete columns */
+@media screen and (max-width: 900px) {
+    #figureContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Phones: display one complete column */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    #figureContainer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    #figureContainer .project-card img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 8px;
+    }
+
+    header {
+        min-height: 180px;
+        padding: 20px;
+    }
+}
+
+/* Use the existing repository background image for the banner */
+header {
+    background-image: url("bbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
