@@ -1,88 +1,148 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Corday Wainwright Portfolio</title>
-
+    <title>Corday Wainwright | Programming Portfolio</title>
     <meta name="author" content="Corday Wainwright">
-
     <meta name="description"
-        content="Portfolio showcasing projects created by Corday Wainwright.">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+          content="Explore Corday Wainwright's programming, web development, and game design projects.">
+    <meta name="keywords"
+          content="Corday Wainwright, programming, web development, game design, portfolio">
 
     <link href="Corday.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
     <header>
-        <h1></h1>
-        <p></p>
+        <h1>Corday Wainwright</h1>
+        <p>Programming, Web Development, and Game Design</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+            <li><a href="portfolio.html" class="selected"
+                   aria-current="page">Portfolio</a></li>
             <li><a href="newsletter.html">Newsletter</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="transcript.html" class="selected">Transcript</a></li>
-            <li>
-                <a href="https://pokerogue.net"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Fun Game
-                </a>
-            </li>
+            <li><a href="transcript.html">Transcript</a></li>
         </ul>
     </nav>
 
     <main>
-
-        <section class="intro">
-            <h2>My Projects</h2>
+        <section class="portfolio-intro">
+            <h2>My Project Portfolio</h2>
             <p>
-                Welcome to my portfolio. Here are some of the projects I have
-                created and continue to improve as I develop my programming skills.
+                Welcome to my portfolio! I enjoy programming, designing
+                websites, and creating video games. These projects show
+                what I have learned and how I continue to improve my skills.
             </p>
         </section>
 
-        <section class="project-card">
-            <h3>Riddling Temple</h3>
+        <section id="figureContainer" aria-label="Featured projects">
 
-            <p>
-                A word-based puzzle game that challenges players with riddles
-                and problem-solving tasks. This project helped me practice
-                programming logic, user interaction, and game design.
-            </p>
+            <figure class="project-card">
+                <img src="images/riddling-temple.jpg"
+                     alt="Screenshot of the Riddling Temple puzzle game"
+                     loading="lazy">
+                <figcaption>
+                    <h3>Riddling Temple</h3>
+                    <p>
+                        A word-based puzzle game that challenges players
+                        with riddles and problem-solving tasks.
+                    </p>
+                    <p><strong>Skills:</strong> Programming and game logic</p>
+                    <a href="https://codehs.com/sandbox/chillgengar/riddling-temple/run"
+                       target="_blank" rel="noopener noreferrer">
+                        Play Riddling Temple
+                    </a>
+                </figcaption>
+            </figure>
 
-            <p><strong>Technologies:</strong> Python, HTML, CSS, VSCode, CodeHS</p>
+            <figure class="project-card">
+                <img src="images/website-project.jpg"
+                     alt="Screenshot of my website development project"
+                     loading="lazy">
+                <figcaption>
+                    <h3>Personal Website</h3>
+                    <p>
+                        A personal website created to practice HTML,
+                        CSS, page structure, and navigation.
+                    </p>
+                    <p><strong>Skills:</strong> HTML and CSS</p>
+                    <a href="index.html">View My Website</a>
+                </figcaption>
+            </figure>
 
-            <a href="https://codehs.com/sandbox/chillgengar/riddling-temple/run"
-                target="_blank"
-                rel="noopener noreferrer">
-                Play Riddling Temple
-            </a>
+            <figure class="project-card">
+                <img src="images/python-project.jpg"
+                     alt="Screenshot of a Python programming project"
+                     loading="lazy">
+                <figcaption>
+                    <h3>Python Programming</h3>
+                    <p>
+                        Programming exercises and small projects
+                        that help me learn functions, loops, and logic.
+                    </p>
+                    <p><strong>Skills:</strong> Python and problem-solving</p>
+                </figcaption>
+            </figure>
+
+            <figure class="project-card">
+                <img src="images/game-design.jpg"
+                     alt="Screenshot of a video game design project"
+                     loading="lazy">
+                <figcaption>
+                    <h3>Game Design</h3>
+                    <p>
+                        Game ideas and experiments focused on gameplay,
+                        player interaction, and creative design.
+                    </p>
+                    <p><strong>Skills:</strong> Game design and planning</p>
+                </figcaption>
+            </figure>
+
+            <figure class="project-card">
+                <img src="images/web-layout.jpg"
+                     alt="Screenshot of a web page layout I created"
+                     loading="lazy">
+                <figcaption>
+                    <h3>Web Page Layouts</h3>
+                    <p>
+                        Web page layouts that use headings, sections,
+                        links, and consistent styling.
+                    </p>
+                    <p><strong>Skills:</strong> HTML structure and CSS</p>
+                </figcaption>
+            </figure>
+
+            <figure class="project-card">
+                <img src="images/coding-project.jpg"
+                     alt="Screenshot of another coding project"
+                     loading="lazy">
+                <figcaption>
+                    <h3>Other Coding Projects</h3>
+                    <p>
+                        Other programming assignments and experiments
+                        that demonstrate my progress as a developer.
+                    </p>
+                    <p><strong>Skills:</strong> Coding and debugging</p>
+                </figcaption>
+            </figure>
+
         </section>
-
     </main>
 
     <footer>
-        Contact me:
-        <a href="mailto:Corday.wainwright12@gmail.com">
-            Corday.wainwright12@gmail.com
-        </a>
-
-        <a href="tel:9415555555">
-            1 (941) 555-5555
-        </a>
+        <p>
+            Contact me:
+            <a href="mailto:Corday.wainwright12@gmail.com">
+                Corday.wainwright12@gmail.com
+            </a>
+        </p>
+    
     </footer>
-
 </body>
-
 </html>
