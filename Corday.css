@@ -306,3 +306,147 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Newsletter page */
+
+.newsletter {
+    padding: 20px;
+}
+
+.newsletter h2 {
+    color: #174a75;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+}
+
+.newsletter .byline {
+    color: #555555;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.newsletter-divider {
+    width: 80%;
+    border: 0;
+    border-top: 4px solid #2879a8;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+/* Special information banner */
+
+.infobar {
+    background-color: #174a75;
+    color: #ffffff;
+    padding: 14px;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Newsletter paragraphs */
+
+.newsletter blockquote {
+    text-align: justify;
+    line-height: 1.8;
+    margin: 25px 30px;
+    padding: 0;
+    color: #333333;
+}
+
+/* Enlarge the first letter of each blockquote */
+
+.newsletter blockquote:first-letter {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #174a75;
+}
+
+/* Bordered newsletter feature box */
+
+.newsletter .box {
+    border: 2px solid #2879a8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #f4f8fc;
+}
+
+/* List with a relevant image bullet */
+
+.developer-list {
+    list-style-image: url("images/Point.gif");
+    line-height: 2;
+    padding-left: 35px;
+}
+
+/* Newsletter image */
+
+.newsletter-image {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.newsletter-image img {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-image figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555555;
+}
+
+.newsletter-closing {
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+/* Navigation rollover and selected-page effects */
+
+nav a {
+    display: inline-block;
+    padding: 10px 14px;
+    color: #174a75;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #174a75;
+    color: #ffffff;
+}
+
+nav a.selected {
+    background-color: #dceaf5;
+    color: #174a75;
+    font-weight: bold;
+}
+
+/* Responsive layout for smaller screens */
+
+@media screen and (max-width: 700px) {
+    .newsletter {
+        padding: 12px;
+    }
+
+    .newsletter blockquote {
+        margin: 20px 5px;
+    }
+
+    .infobar {
+        line-height: 1.6;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+}
