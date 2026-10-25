@@ -1,63 +1,143 @@
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Corday Wainwright contact</title>
-
-    <meta name="author" content="Corday Wainwright">
-
-    <meta name="description"
-        content="Resume for Corday Wainwright including education, work experience, skills, projects, and certifications.">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <title>Contact Corday Wainwright | Programming Portfolio</title>
+    <meta name="description" content=" Contact Corday Wainwright about programming, web development, and game design projects.">
 
     <link href="Corday.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+    <div id="wrapper">
 
-    <header>
-        <h1></h1>
-        <p></p>
-        <p></p>
-        <p></p>
-    </header>
+        <header id="masthead">
+            <h1>Corday Wainwright</h1>
+            <p>Programming, Web Development, and Game Design</p>
+        </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="contact.html" class="selected"
+                    aria-current="page">Contact</a></li>
+                <li><a href="transcript.html">Transcript</a></li>
+            </ul>
+        </nav>
 
-            <li>
-                <a href="resume.html" class="selected">Resume</a>
-            </li>
+        <main>
+            <section>
+                <h2>Contact Me</h2>
+                <p>
+                    Use the table below to practice filling out a contact form.
+                    Fields marked with an asterisk (*) are required.
+                </p>
 
-            <li>
-                <a href="portfolio.html">Portfolio</a>
-            </li>
+                <form action="#" method="post">
+                    <table class="contact-table">
+                        <tr>
+                            <th colspan="2">
+                                Contact Corday Wainwright
+                            </th>
+                        </tr>
 
-            <li>
-                <a href="newsletter.html">Newsletter</a>
-            </li>
+                        <tr>
+                            <td><label for="firstName">First Name
+                                <span class="required">*</span></label></td>
+                            <td><input type="text" id="firstName"
+                                name="firstName" required></td>
+                        </tr>
 
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="transcript.html" class="selected">Transcript</a>
-            </li>
+                        <tr>
+                            <td><label for="lastName">Last Name
+                                <span class="required">*</span></label></td>
+                            <td><input type="text" id="lastName"
+                                name="lastName" required></td>
+                        </tr>
 
-            <li>
-                <a href="https://pokerogue.net" target="_blank">Fun Game</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <p> <strong> Working Progress </strong> </p>
+                        <tr>
+                            <td><label for="city">City</label></td>
+                            <td><input type="text" id="city" name="city"></td>
+                        </tr>
 
+                        <tr>
+                            <td><label for="state">State</label></td>
+                            <td><input type="text" id="state" name="state"
+                                maxlength="2" placeholder="FL"></td>
+                        </tr>
 
+                        <tr>
+                            <td><label for="zip">ZIP Code</label></td>
+                            <td><input type="text" id="zip" name="zip"
+                                inputmode="numeric" maxlength="10"></td>
+                        </tr>
 
-    </main>
+                        <tr>
+                            <td><label for="email">Email
+                                <span class="required">*</span></label></td>
+                            <td><input type="email" id="email" name="email"
+                                required></td>
+                        </tr>
+
+                        <tr>
+                            <td>Preferred Contact Method</td>
+                            <td>
+                                <input type="radio" id="emailContact"
+                                    name="contactMethod" value="email">
+                                <label for="emailContact">Email</label>
+
+                                <input type="radio" id="otherContact"
+                                    name="contactMethod" value="other">
+                                <label for="otherContact">Other</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Topics</td>
+                            <td>
+                                <input type="checkbox" id="programming"
+                                    name="topics" value="programming">
+                                <label for="programming">Programming</label>
+
+                                <input type="checkbox" id="webDesign"
+                                    name="topics" value="webDesign">
+                                <label for="webDesign">Web Design</label>
+
+                                <input type="checkbox" id="gameDesign"
+                                    name="topics" value="gameDesign">
+                                <label for="gameDesign">Game Design</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="comments">Comments</label></td>
+                            <td><textarea id="comments" name="comments"
+                                rows="4" cols="30"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="form-buttons">
+                                <button type="submit">Submit</button>
+                                <button type="reset">Clear Form</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Corday Wainwright | Programming Portfolio</p>
+        </footer>
+
+    </div> <!-- close wrapper -->
+</body>
+
+</html>
