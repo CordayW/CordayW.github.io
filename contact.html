@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Contact Corday Wainwright | Programming Portfolio</title>
-    <meta name="description" content=" Contact Corday Wainwright about programming, web development, and game design projects.">
+
+    <meta name="author" content="Corday Wainwright">
+    <meta name="description" content="Contact Corday Wainwright about programming, web development, game design, and other projects.">
 
     <link href="Corday.css" rel="stylesheet" type="text/css">
 </head>
@@ -15,11 +17,13 @@
 <body>
     <div id="wrapper">
 
+        <!-- Website Header -->
         <header id="masthead">
             <h1>Corday Wainwright</h1>
             <p>Programming, Web Development, and Game Design</p>
         </header>
 
+        <!-- Website Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -35,114 +39,267 @@
         <main>
             <section>
                 <h2>Contact Me</h2>
+
                 <p>
-                     Fill out the contact form below.
+                    Fill out the form below to contact me about
+                    programming, web development, or game design.
                     Fields marked with an asterisk (*) are required.
                 </p>
 
-                <form action="https://formsubmit.co/Corday.Wainwright12@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New Message from Corday's Portfolio">
+                <!-- Contact Form -->
+                <form name="contactForm"
+                    id="contactForm"
+                    action="https://formsubmit.co/Corday.Wainwright12@gmail.com"
+                    method="POST">
 
-                    <input type="hidden" name="_template" value="table">
+                    <!-- Email Settings -->
+                    <input type="hidden" name="_subject"
+                        value="New Message from Corday's Portfolio">
 
-                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_template"
+                        value="table">
+
+                    <input type="hidden" name="_next"
+                        value="https://cordayw.github.io/contactSent.html">
+
+                    <!-- Spam Protection -->
+                    <input type="text" name="_honey"
+                        style="display:none">
+
                     <table class="contact-table">
+
                         <tr>
                             <th colspan="2">
                                 Contact Corday Wainwright
                             </th>
                         </tr>
 
+                        <!-- First Name -->
                         <tr>
-                            <td><label for="firstName">First Name
-                                <span class="required">*</span></label></td>
-                            <td><input type="text" id="firstName"
-                                name="firstName" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="lastName">Last Name
-                                <span class="required">*</span></label></td>
-                            <td><input type="text" id="lastName"
-                                name="lastName" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="city">City</label></td>
-                            <td><input type="text" id="city" name="city"></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="state">State</label></td>
-                            <td><input type="text" id="state" name="state"
-                                maxlength="2" placeholder="FL"></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="zip">ZIP Code</label></td>
-                            <td><input type="text" id="zip" name="zip"
-                                inputmode="numeric" maxlength="10"></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="email">Email
-                                <span class="required">*</span></label></td>
-                            <td><input type="email" id="email" name="email"
-                                required></td>
-                        </tr>
-
-                        <tr>
-                            <td>Preferred Contact Method</td>
+                            <td class="form-label">
+                                <label for="FirstName">
+                                    First Name <span class="required">*</span>
+                                </label>
+                            </td>
                             <td>
-                                <input type="radio" id="emailContact"
-                                    name="contactMethod" value="email">
-                                <label for="emailContact">Email</label>
-
-                                <input type="radio" id="otherContact"
-                                    name="contactMethod" value="other">
-                                <label for="otherContact">Other</label>
+                                <input type="text"
+                                    name="FirstName"
+                                    id="FirstName"
+                                    required>
                             </td>
                         </tr>
 
+                        <!-- Last Name -->
                         <tr>
-                            <td>Topics</td>
+                            <td class="form-label">
+                                <label for="LastName">
+                                    Last Name <span class="required">*</span>
+                                </label>
+                            </td>
                             <td>
-                                <input type="checkbox" id="programming"
-                                    name="topics" value="programming">
-                                <label for="programming">Programming</label>
-
-                                <input type="checkbox" id="webDesign"
-                                    name="topics" value="webDesign">
-                                <label for="webDesign">Web Design</label>
-
-                                <input type="checkbox" id="gameDesign"
-                                    name="topics" value="gameDesign">
-                                <label for="gameDesign">Game Design</label>
+                                <input type="text"
+                                    name="LastName"
+                                    id="LastName"
+                                    required>
                             </td>
                         </tr>
 
+                        <!-- City -->
                         <tr>
-                            <td><label for="comments">Comments</label></td>
-                            <td><textarea id="comments" name="comments"
-                                rows="4" cols="30"></textarea></td>
+                            <td class="form-label">
+                                <label for="City">City</label>
+                            </td>
+                            <td>
+                                <input type="text"
+                                    name="City"
+                                    id="City">
+                            </td>
                         </tr>
 
+                        <!-- State Dropdown -->
+                        <tr>
+                            <td class="form-label">
+                                <label for="State">State</label>
+                            </td>
+                            <td>
+                                <select name="State" id="State">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL" selected>Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <!-- ZIP Code -->
+                        <tr>
+                            <td class="form-label">
+                                <label for="ZIP">ZIP Code</label>
+                            </td>
+                            <td>
+                                <input type="text"
+                                    name="ZIP"
+                                    id="ZIP"
+                                    inputmode="numeric"
+                                    pattern="[0-9]{5}"
+                                    maxlength="5"
+                                    placeholder="12345"
+                                    title="Enter a five-digit ZIP code">
+                            </td>
+                        </tr>
+
+                        <!-- Email -->
+                        <tr>
+                            <td class="form-label">
+                                <label for="Email">
+                                    Email <span class="required">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="email"
+                                    name="Email"
+                                    id="Email"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <!-- Preferred Contact Method -->
+                        <tr>
+                            <td class="form-label">
+                                Preferred Contact Method
+                            </td>
+                            <td>
+                                <input type="radio"
+                                    name="ContactMethod"
+                                    id="EmailContact"
+                                    value="Email">
+
+                                <label for="EmailContact">Email</label>
+
+                                <input type="radio"
+                                    name="ContactMethod"
+                                    id="OtherContact"
+                                    value="Other">
+
+                                <label for="OtherContact">Other</label>
+                            </td>
+                        </tr>
+
+                        <!-- Topics Checkboxes -->
+                        <tr>
+                            <td class="form-label">
+                                Topics
+                            </td>
+                            <td>
+                                <input type="checkbox"
+                                    name="Topics[]"
+                                    id="Programming"
+                                    value="Programming">
+
+                                <label for="Programming">Programming</label>
+
+                                <br>
+
+                                <input type="checkbox"
+                                    name="Topics[]"
+                                    id="WebDesign"
+                                    value="Web Design">
+
+                                <label for="WebDesign">Web Design</label>
+
+                                <br>
+
+                                <input type="checkbox"
+                                    name="Topics[]"
+                                    id="GameDesign"
+                                    value="Game Design">
+
+                                <label for="GameDesign">Game Design</label>
+                            </td>
+                        </tr>
+
+                        <!-- Required Comments -->
+                        <tr>
+                            <td class="form-label">
+                                <label for="Comments">
+                                    Comments <span class="required">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <textarea name="Comments"
+                                    id="Comments"
+                                    rows="5"
+                                    cols="40"
+                                    placeholder="Enter your message here..."
+                                    required></textarea>
+                            </td>
+                        </tr>
+
+                        <!-- Submit and Reset -->
                         <tr>
                             <td colspan="2" class="form-buttons">
                                 <button type="submit">Submit</button>
                                 <button type="reset">Clear Form</button>
                             </td>
                         </tr>
+
                     </table>
                 </form>
             </section>
         </main>
 
+        <!-- Website Footer -->
         <footer>
             <p>&copy; 2026 Corday Wainwright | Programming Portfolio</p>
         </footer>
 
     </div> <!-- close wrapper -->
-</body>
 
+</body>
 </html>
