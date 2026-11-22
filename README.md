@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="selected">Home</a>
+                <a href="index.html">Home</a>
             </li>
 
             <li>
@@ -41,9 +41,13 @@
             <li>
                 <a href="contact.html">Contact</a>
             </li>
-            <li><a href="transcript.html" class="selected">Transcript</a></li>
+            <li>
+                <a href="transcript.html">Transcript</a></li>
             <li>
                 <a href="https://pokerogue.net" target="_blank">Fun Game</a>
+            </li>
+            <li>
+                <a href="media.html">Media</a>
             </li>
         </ul>
     </nav>
