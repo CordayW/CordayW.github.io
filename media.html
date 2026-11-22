@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Corday Wainwright | Media Page</title>
+
+    <meta name="author" content="Corday Wainwright">
+    <meta name="description"
+          content="Explore Corday Wainwright's media page featuring audio, video, animation, slideshows, and programming projects.">
+
+    <link rel="stylesheet" href="Corday.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Corday Wainwright</h1>
+    <p>Programming, Web Development, and Game Design</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="contact.html">Contact</a>
+    <a href="transcript.html">Transcript</a>
+</nav>
+
+<main>
+
+    <h2>My Media Page</h2>
+
+    <p>
+        Welcome to my media page! Here you can explore my interests
+        in programming, video games, web development, and technology.
+        This page demonstrates different types of digital media.
+    </p>
+
+    <!-- 1. AUDIO -->
+    <section>
+        <h2>1. Personal Audio Introduction</h2>
+
+        <p>
+            Listen to my personal introduction and learn more
+            about my interests in programming and game development.
+        </p>
+
+        <audio controls>
+            <source src="media/introduction.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- 2. VIDEO -->
+    <section>
+        <h2>2. Personal Video Introduction</h2>
+
+        <p>
+            Watch my introduction video about my programming
+            interests and future goals.
+        </p>
+
+        <video controls width="100%" poster="media/video-poster.jpg">
+            <source src="media/introduction.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <!-- 3. ANIMATED GIF -->
+    <section>
+        <h2>3. Animated Programming GIF</h2>
+
+        <p>
+            This animation represents my interest in coding
+            and creating new technology.
+        </p>
+
+        <img src="media/coding-animation.gif"
+             alt="Animated programming illustration"
+             class="media-image">
+    </section>
+
+    <!-- 4. SLIDESHOW -->
+    <section>
+        <h2>4. My Programming Project Slideshow</h2>
+
+        <p>
+            Explore some of my programming and web development projects.
+        </p>
+
+        <div class="slideshow">
+
+            <img class="slide"
+                 src="media/project1.jpg"
+                 alt="Programming project one">
+
+            <img class="slide"
+                 src="media/project2.jpg"
+                 alt="Programming project two">
+
+            <img class="slide"
+                 src="media/project3.jpg"
+                 alt="Programming project three">
+
+            <div class="slide-controls">
+                <button onclick="changeSlide(-1)">Previous</button>
+                <button onclick="changeSlide(1)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. IMAGE HOTSPOT -->
+    <section>
+        <h2>5. Interactive Image Hotspot</h2>
+
+        <p>
+            Click the computer screen in the image to visit
+            my programming portfolio.
+        </p>
+
+        <img src="media/computer.jpg"
+             alt="Computer with a clickable screen"
+             usemap="#computer-map"
+             class="media-image">
+
+        <map name="computer-map">
+            <area shape="rect"
+                  coords="80,40,400,280"
+                  href="portfolio.html"
+                  alt="Visit my programming portfolio">
+        </map>
+    </section>
+
+    <!-- 6. YOUTUBE -->
+    <section>
+        <h2>6. Programming and Game Development Video</h2>
+
+        <p>
+            Watch a video about programming and game development.
+        </p>
+
+        <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Programming and Game Development"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- 7. Z-INDEX -->
+    <section>
+        <h2>7. Layered Programming Images</h2>
+
+        <p>
+            These images demonstrate how CSS z-index can
+            stack images on top of one another.
+        </p>
+
+        <div class="image-stack">
+            <img src="media/code.jpg"
+                 alt="Programming code"
+                 class="stack-back">
+
+            <img src="media/computer.jpg"
+                 alt="Computer used for programming"
+                 class="stack-front">
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        Contact me: Corday.wainwright12@gmail.com
+    </p>
+    
+</footer>
+
+<script>
+    let currentSlide = 0;
+
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+        slides.forEach(slide => {
+            slide.style.display = "none";
+        });
+
+        currentSlide = (index + slides.length) % slides.length;
+
+        slides[currentSlide].style.display = "block";
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    showSlide(0);
+</script>
+
+</body>
+</html>
