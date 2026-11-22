@@ -588,3 +588,89 @@ nav a.selected {
     margin: 5px;
     cursor: pointer;
 }
+
+/* MEDIA PAGE */
+
+main section {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.media-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+video {
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.slideshow {
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide-controls {
+    margin: 15px;
+}
+
+.slide-controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.image-stack {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    margin: 30px auto;
+}
+
+.image-stack img {
+    position: absolute;
+    width: 65%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.stack-back {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.stack-front {
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
